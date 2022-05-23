@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>JSONPlaceholder</title>
+
+</head>
+<body>
+
+  <header>
+    <div class="header__container">
+      <a href='#' class="header__title">
+        JSONPlaceholder <span class="header__subtitle">| A fake REST API for developers</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class='container' id='container'>
+      <div class="pagination" id="pagination">
+        <button class="back button" id="back" onclick={paginaAnterior(event)}>
+          <i class="ri-arrow-left-s-line"></i> Anterior
+        </button>
+        <button class="next button" id="next" onclick={siguientePagina(event)}>
+          Siguiente <i class="ri-arrow-right-s-line"></i>
+        </button>
+      </div>
+
+      <article class='data' id='data'>
+      </article>
+    </section>
+  </main>
+
+  <a href='#' class="scroll__up button" id='scroll-up'>
+    <i class="ri-arrow-up-s-line"></i>
+  </a>
+
+  <script src='./main.js'></script>
+</body>
+</html>
